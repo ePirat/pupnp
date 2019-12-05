@@ -22,3 +22,13 @@ jobs:
       run: make
     - name: make distcheck
       run: make distcheck
+
+  build_msvc:
+    name: Build (MSVC 2019)
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build
+      run: |
+        cd "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\"
+        .\MSBuild.exe $Env:GITHUB_WORKSPACE\build\vc10\libupnp.vcxproj /p:PlatformToolset=v142
