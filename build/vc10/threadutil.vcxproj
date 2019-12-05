@@ -314,17 +314,17 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\threadutil\src\FreeList.c" />
-    <ClCompile Include="..\..\threadutil\src\LinkedList.c" />
-    <ClCompile Include="..\..\threadutil\src\ThreadPool.c" />
-    <ClCompile Include="..\..\threadutil\src\TimerThread.c" />
+    <ClCompile Include="..\..\upnp\src\threadutil\FreeList.c" />
+    <ClCompile Include="..\..\upnp\src\threadutil\LinkedList.c" />
+    <ClCompile Include="..\..\upnp\src\threadutil\ThreadPool.c" />
+    <ClCompile Include="..\..\upnp\src\threadutil\TimerThread.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\threadutil\inc\FreeList.h" />
-    <ClInclude Include="..\..\threadutil\inc\ithread.h" />
-    <ClInclude Include="..\..\threadutil\inc\LinkedList.h" />
-    <ClInclude Include="..\..\threadutil\inc\threadpool.h" />
-    <ClInclude Include="..\..\threadutil\inc\TimerThread.h" />
+    <ClInclude Include="..\..\upnp\src\threadutil\FreeList.h" />
+    <ClInclude Include="..\..\upnp\src\threadutil\LinkedList.h" />
+    <ClInclude Include="..\..\upnp\src\threadutil\ThreadPool.h" />
+    <ClInclude Include="..\..\upnp\src\threadutil\TimerThread.h" />
+    <ClInclude Include="..\..\upnp\inc\ithread.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
